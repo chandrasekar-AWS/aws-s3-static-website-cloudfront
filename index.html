@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My AWS S3 Website</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 700px;
+    }
+    .logo { font-size: 80px; margin-bottom: 20px; }
+    h1 { font-size: 2.8rem; margin-bottom: 10px; color: #FF9900; }
+    p  { font-size: 1.1rem; color: #ccc; margin-bottom: 30px; line-height: 1.7; }
+    .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 20px 0; }
+    .badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,153,0,0.4);
+      color: #FF9900;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      backdrop-filter: blur(5px);
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      background: #FF9900;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .cta:hover { background: #e68a00; }
+    footer { margin-top: 50px; font-size: 0.8rem; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">☁️</div>
+    <h1>Hosted on AWS S3</h1>
+    <p>
+      This static website is served from an <strong>Amazon S3 bucket</strong>
+      and delivered globally through <strong>Amazon CloudFront CDN</strong> —
+      fast, secure, and highly available.
+    </p>
+    <div class="badges">
+      <span class="badge">🪣 Amazon S3</span>
+      <span class="badge">🌍 CloudFront CDN</span>
+      <span class="badge">🔒 HTTPS Enabled</span>
+      <span class="badge">⚡ Global Edge Delivery</span>
+    </div>
+    <a class="cta" href="https://github.com/chandrasekar-AWS/aws-s3-static-website-cloudfront" target="_blank">
+      View on GitHub →
+    </a>
+    <footer>
+      <p>Built by Chandrasekar | AWS S3 + CloudFront Project</p>
+    </footer>
+  </div>
+</body>
+</html>
