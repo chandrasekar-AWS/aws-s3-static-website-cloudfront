@@ -1,0 +1,17 @@
+# AWS credentials — never commit these!
+.aws/
+credentials
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
